@@ -1,0 +1,62 @@
+.Sidebar {
+  width: 280px; /* ← increase width to fill more left space */
+  height: 100vh; /* ← full height */
+  background: hsla(0, 20.00%, 1.00%, 0.00);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 15px;
+  border-right: 1px solid rgba(5, 0, 0, 0.58);
+  color: white;
+  position: relative;
+}
+
+
+
+.Sidebar img {
+  width: 22px;
+  filter: invert(1);
+}
+
+.menu {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px  #00ffd0);
+}
+
+.new-chat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 30px;
+  color: #00ffd0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.recent-entry,
+.bottom-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 30px;
+  transition: background 0.2s ease;
+}
+
+
+.recent-entry:hover,
+.bottom-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.recent-title {
+  margin: 20px 0 10px;
+  color: #999;
+  font-size: 12px;
+}
